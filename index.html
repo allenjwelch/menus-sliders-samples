@@ -7,18 +7,55 @@
   <title>CSS menus & jQuery Sliders</title>
   <link rel="stylesheet" href="./assets/css/slider1.css">
   <link rel="stylesheet" href="./assets/css/slider2.css">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
 </head>
 <body>
+
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="header">
+          <h2>Mega Menu</h2>
+        </div> 
+        <div class="row">
+          <div class="column">
+            <h3>Category 1</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <div class="column">
+            <h3>Category 2</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <div class="column">
+            <h3>Category 3</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+
   <div class="container-1">
     <h1>jQuery Basic Slider 1 (Timed)</h1>
     <div id="slider">
       <ul class="slides">
-        <li class="slide slide1">slide1</li>
-        <li class="slide slide2">slide2</li>
-        <li class="slide slide3">slide3</li>
-        <li class="slide slide4">slide4</li>
-        <li class="slide slide5">slide5</li>
-        <li class="slide slide1">slide1</li>
+        <li class="slide slide1"></li>
+        <li class="slide slide2"></li>
+        <li class="slide slide3"></li>
+        <li class="slide slide4"></li>
+        <li class="slide slide5"></li>
+        <li class="slide slide1"></li>
       </ul>
     </div>
   </div>
@@ -28,10 +65,10 @@
     <div class="slider-outer">
       <img src="./assets/images/arrow-left.png" class="prev" alt="Prev">
       <div class="slider-inner">
-        <img src="./assets/images/image1.jpg" class="active">
-        <img src="./assets/images/image2.jpg">
-        <img src="./assets/images/image3.jpg">
-        <img src="./assets/images/image4.jpg">
+        <img id="img1" src="./assets/images/image1.jpg" class="active">
+        <img id="img2" src="./assets/images/image2.jpg">
+        <img id="img3" src="./assets/images/image3.jpg">
+        <img id="img4" src="./assets/images/image4.jpg">
       </div>
       <img src="./assets/images/arrow-right.png" class="next" alt="Next">
     </div>

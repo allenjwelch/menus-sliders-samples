@@ -21,8 +21,8 @@
 }
 
 /* helper css, since we don't have images */
-.slide1 {background: red;}
-.slide2 {background: blue;}
-.slide3 {background: green;}
-.slide4 {background: purple;}
-.slide5 {background: pink;}
+.slide1 {background: url('../images/slider1_image1.jpg'); }
+.slide2 {background: url('../images/slider1_image2.jpg'); }
+.slide3 {background: url('../images/slider1_image3.jpg'); }
+.slide4 {background: url('../images/slider1_image4.jpg'); }
+.slide5 {background: url('../images/slider1_image5.jpg'); }
