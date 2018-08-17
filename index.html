@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS menus & jQuery Sliders</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/slider1.css">
+  <link rel="stylesheet" href="./assets/css/slider2.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-        <h1 class="text-muted">jQuery Basic Slider</h1>
-    </div>
-
+  <div class="container-1">
+    <h1>jQuery Basic Slider 1 (Timed)</h1>
     <div id="slider">
       <ul class="slides">
         <li class="slide slide1">slide1</li>
@@ -23,10 +21,25 @@
         <li class="slide slide1">slide1</li>
       </ul>
     </div>
+  </div>
 
-</div>
+  <div class="container-2">
+    <h1>jQuery Basic Slider 2 (Click)</h1>
+    <div class="slider-outer">
+      <img src="./assets/images/arrow-left.png" class="prev" alt="Prev">
+      <div class="slider-inner">
+        <img src="./assets/images/image1.jpg" class="active">
+        <img src="./assets/images/image2.jpg">
+        <img src="./assets/images/image3.jpg">
+        <img src="./assets/images/image4.jpg">
+      </div>
+      <img src="./assets/images/arrow-right.png" class="next" alt="Next">
+    </div>
+  </div>
+
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="main.js"></script>
+<script src="./assets/js/slider1.js"></script>
+<script src="./assets/js/slider2.js"></script>
 </html>

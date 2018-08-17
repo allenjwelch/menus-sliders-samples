@@ -2,6 +2,7 @@
   width: 720px;
   height: 400px;
   overflow: hidden;
+  margin:40px auto;
 }
 
 #slider .slides {

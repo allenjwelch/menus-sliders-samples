@@ -5,13 +5,15 @@ $(function() {
     //settings for slider
     var width = 720;
     var animationSpeed = 1000;
-    var pause = 3000;
+    var pause = 2000;
     var currentSlide = 1;
 
     //cache DOM elements
     var $slider = $('#slider');
-    var $slideContainer = $('.slides', $slider);
+    var $slideContainer = $('.slides', $slider); 
+    // var $slideContainer = $slider.find('.slides'); 
     var $slides = $('.slide', $slider);
+    // var $slides = $slider.find('.slide')
 
     var interval;
 
@@ -34,6 +36,4 @@ $(function() {
         .on('mouseleave', startSlider);
 
     startSlider();
-
-
 });
