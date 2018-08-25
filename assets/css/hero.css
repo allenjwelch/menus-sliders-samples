@@ -1,0 +1,31 @@
+/* In Background property you can add background color, repeat, no-repeat and image attributes But in background-image property you are only allowed to add image
+background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+
+
+.container-hero {
+  margin: 0 -8px;
+  height: 400px;
+  /* background-image: url(../images/hero.jpg); 
+  background-position: center; 
+  background-repeat: no-repeat;  */
+  background: url(../images/hero.jpg) center no-repeat;
+
+  /* The background-clip CSS property specifies if an element's background, whether a <color> or an <image>, extends underneath its border.  */
+  /* background-clip: content-box; */
+
+  /* If a background-image is specified, the background-attachment CSS property determines whether that image's position is fixed within the viewport, or scrolls along with its containing block. */
+  /* background-attachment: local; */
+  /* background-attachment: fixed; */
+  background-size: cover; 
+  position: relative; 
+}
+
+.hero-text {
+  text-align: center; 
+  position: absolute; 
+  width: 70%;
+  color: black; 
+  height: auto;
+  margin: 10% 15%;
+  background: rgb(255, 255, 255, .5); 
+}
